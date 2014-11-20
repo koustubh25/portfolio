@@ -4,21 +4,22 @@
   	<script src="bower_components/angular-route/angular-route.js"></script>
   	<script src="js/app.js"></script>
   	<script src="js/controllers.js"></script>
+
+  	<link href='css/app.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
 	<!-- Home Page Section -->
-	<div data-ng-controller='homePageController'>
-		<ul>
-			<li data-ng-repeat="item in menubarItems">
-				<a href="#/{{item.url}}">{{item.menu}}</a>
-			</li>
-		</ul>
 
 
-	</div>
+ <!-- Home Page Selection ends -->
 
-	<div data-ng-view></div>
+<video autoplay loop poster="polina.jpg" id="bgvid">
+<source src="videos/Technology_Background.mp4" type="video/mp4">
+</video>
+
+	<div data-ng-view>
+  </div>
 
 </body>
 

@@ -6,23 +6,23 @@ portfolioControllers.controller('homePageController',['$scope',function($scope){
 
 	$scope.menubarItems = [
 		{
-			'menu' : 'home',
+			'menu' : 'HOME',
 			'url' : 'home'
 		},
 		{
-			'menu' : 'My Work',
+			'menu' : 'MY WORK',
 			'url' : 'work'
 		},
 		{
-			'menu' : 'Resume',
+			'menu' : 'RESUME',
 			'url' : 'resume'
 		},
 		{
-			'menu' : 'Gallery',
+			'menu' : 'GALLERY',
 			'url' : 'gallery'
 		},
 		{
-			'menu' : 'Contact',
+			'menu' : 'CONTACT',
 			'url' : 'contact'
 		}];
 		$scope.profileName = 'Koustubh';
