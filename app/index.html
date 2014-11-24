@@ -2,6 +2,7 @@
 <head>	
   	<script src="bower_components/angular/angular.js"></script>
   	<script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
   	<script src="js/app.js"></script>
   	<script src="js/controllers.js"></script>
 
@@ -14,11 +15,14 @@
 
  <!-- Home Page Selection ends -->
 
+
+<!-- Video Background -->
+
 <video autoplay loop poster="polina.jpg" id="bgvid">
 <source src="videos/Technology_Background.mp4" type="video/mp4">
 </video>
 
-	<div data-ng-view>
+	<div data-ng-view class="view-frame">
   </div>
 
 </body>

@@ -2,6 +2,7 @@
 
 var portfolioApp = angular.module('portfolioApp',[
 
+	'ngAnimate',
 	'ngRoute',
 	'portfolioControllers'
 
