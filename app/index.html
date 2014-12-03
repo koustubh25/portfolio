@@ -9,8 +9,6 @@
   <link rel="stylesheet" href="bower_components/angular-material/themes/blue-theme.css">
   	<script src="bower_components/angular/angular.js"></script>
 
-
-  	<script src="bower_components/angular-route/angular-route.js"></script>
     <!-- angular ui-route script -->
     <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 
@@ -30,20 +28,20 @@
 
 
 <!-- Toolbar also called as the nav-bar-->
- <md-toolbar class="md-toolbar-tools">
+ <md-toolbar class="md-toolbar-tools" md-theme="amber">
     <md-tabs>
    
-      <md-tab label = "Home" ui-sref="#/home">
+      <md-tab label = "Home" ui-sref="home">
     </md-tab>
     
-      <md-tab label = "My work" ui-sref="#/work">
+      <md-tab label = "My work" ui-sref="work" style="font-weight:bold;font-size:20px;">
     </md-tab>
     
-      <md-tab label = "Resume">
+      <md-tab label = "Resume" ui-sref="resume">
       </md-tab>
-      <md-tab label = "Gallery" >
+      <md-tab label = "Gallery"  ui-sref="gallery">
       </md-tab>
-      <md-tab label = "Contact me" >
+      <md-tab label = "Contact me"  ui-sref="contact">
       </md-tab>
   </md-tabs>
   </md-toolbar>
@@ -59,7 +57,7 @@
 
 <!-- ***************************-->
 
-	<div data-ng-view class="view-frame">
+	<div data-ui-view class="view-frame">
   </div>
 
 </body>

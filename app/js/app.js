@@ -3,7 +3,6 @@
 var portfolioApp = angular.module('portfolioApp',[
 
 	'ngAnimate',
-	'ngRoute',
 	'portfolioControllers',
 	'ngMaterial',
 	'ui.router'
@@ -11,33 +10,36 @@ var portfolioApp = angular.module('portfolioApp',[
 	]);
 
 
-portfolioApp.config(['$routeProvider', function($routeProvider){
+portfolioApp.config(['$urlRouterProvider','$stateProvider', function($urlRouterProvider,$stateProvider){
 
-	$routeProvider.
-	when('/work',{
+	$stateProvider.
+	state('work',{
 
+		url:'work',
 		templateUrl : 'partials/myWork.html',
 		controller : 'workController'
 	}).
-	when('/resume',{
+	state('resume',{
+		url:'resume',
 		templateUrl : 'partials/resume.html',
 		controller : 'resumeController'
 	}).
-	when('/gallery',{
+	state('gallery',{
+		url:'gallery',
 		templateUrl : 'partials/gallery.html',
 		controller : 'galleryController'
 	}).
-	when('/contact',{
+	state('contact',{
+		url:'contact',
 		templateUrl : 'partials/contact.html',
 		controller : 'contactController'
 	}).
-	when('/home',{
+	state('home',{
+		url : 'home',
 		templateUrl : 'partials/home.html',
 		controller : 'homePageController'
-	}).
-	otherwise({
-		redirectTo : '/home'
 	});
 
+	$urlRouterProvider.otherwise('/home');
 
 }]);
