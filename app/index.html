@@ -1,17 +1,52 @@
 <html data-ng-app="portfolioApp">
 <head>	
+	<!-- Include the angular css -->
+	<link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+	<link href='css/app.css' rel='stylesheet' type='text/css'>
+
+  <!-- Set a Material Theme -->
+  <link rel="stylesheet" href="bower_components/angular-material/themes/amber-theme.css">
+  <link rel="stylesheet" href="bower_components/angular-material/themes/blue-theme.css">
   	<script src="bower_components/angular/angular.js"></script>
+
+
   	<script src="bower_components/angular-route/angular-route.js"></script>
+    <!-- angular ui-route script -->
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
     <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/hammerjs/hammer.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
   	<script src="js/app.js"></script>
   	<script src="js/controllers.js"></script>
 
-  	<link href='css/app.css' rel='stylesheet' type='text/css'>
+  	
 </head>
-<body>
+<body data-ng-controller="homePageController">
 
 	<!-- Home Page Section -->
 
+
+
+<!-- Toolbar also called as the nav-bar-->
+ <md-toolbar class="md-toolbar-tools">
+    <md-tabs>
+   
+      <md-tab label = "Home" ui-sref="#/home">
+    </md-tab>
+    
+      <md-tab label = "My work" ui-sref="#/work">
+    </md-tab>
+    
+      <md-tab label = "Resume">
+      </md-tab>
+      <md-tab label = "Gallery" >
+      </md-tab>
+      <md-tab label = "Contact me" >
+      </md-tab>
+  </md-tabs>
+  </md-toolbar>
 
  <!-- Home Page Selection ends -->
 
@@ -21,6 +56,8 @@
 <video autoplay loop poster="polina.jpg" id="bgvid">
 <source src="videos/Technology_Background.mp4" type="video/mp4">
 </video>
+
+<!-- ***************************-->
 
 	<div data-ng-view class="view-frame">
   </div>

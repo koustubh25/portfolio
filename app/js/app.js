@@ -4,7 +4,9 @@ var portfolioApp = angular.module('portfolioApp',[
 
 	'ngAnimate',
 	'ngRoute',
-	'portfolioControllers'
+	'portfolioControllers',
+	'ngMaterial',
+	'ui.router'
 
 	]);
 
