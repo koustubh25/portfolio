@@ -15,7 +15,7 @@
     "jquery.easing": "~1.3",
     "angular-material": "",
     "angular-ui-router" : "",
-    "angular-rrssb" : ""
+    "angular-touch" : ""
   },
   "resolutions": {
     "angular": "1.3.5",
