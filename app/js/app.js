@@ -40,6 +40,6 @@ portfolioApp.config(['$urlRouterProvider','$stateProvider', function($urlRouterP
 		controller : 'homePageController'
 	});
 
-	$urlRouterProvider.otherwise('/home');
+	$urlRouterProvider.otherwise('home');
 
 }]);

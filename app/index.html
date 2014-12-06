@@ -1,6 +1,6 @@
 <html data-ng-app="portfolioApp">
 <head>	
-	<!-- Include the angular css -->
+	<!-- Include the angular Material css -->
 	<link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
 	<link href='css/app.css' rel='stylesheet' type='text/css'>
 
@@ -19,13 +19,23 @@
   	<script src="js/app.js"></script>
   	<script src="js/controllers.js"></script>
 
+
+
+
+
   	
 </head>
 <body data-ng-controller="homePageController">
 
 	<!-- Home Page Section -->
 
+<!-- Video Background -->
 
+<video autoplay loop poster="polina.jpg" id="bgvid">
+<source src="videos/Technology_Background.mp4" type="video/mp4">
+</video>
+
+<!-- ***************************-->
 
 <!-- Toolbar also called as the nav-bar-->
  <md-toolbar class="md-toolbar-tools" md-theme="amber">
@@ -34,7 +44,7 @@
       <md-tab label = "Home" ui-sref="home">
     </md-tab>
     
-      <md-tab label = "My work" ui-sref="work" style="font-weight:bold;font-size:20px;">
+      <md-tab label = "My work" ui-sref="work">
     </md-tab>
     
       <md-tab label = "Resume" ui-sref="resume">
@@ -49,17 +59,12 @@
  <!-- Home Page Selection ends -->
 
 
-<!-- Video Background -->
 
-<video autoplay loop poster="polina.jpg" id="bgvid">
-<source src="videos/Technology_Background.mp4" type="video/mp4">
-</video>
-
-<!-- ***************************-->
 
 	<div data-ui-view class="view-frame">
   </div>
 
+ 
 </body>
 
 

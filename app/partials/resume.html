@@ -1,4 +1,18 @@
-<div style="top:10%;bottom:10%; position:absolute;background: rgba(92, 10, 54, 0.1);;width:90%;left:5%;">
-This is my Resume
-<md-button href="http://google.com" class="md-button-colored"></md>
+
+
+<div style="top:10%;bottom:10%; position:absolute;background: rgba(92, 10, 54, 0.1);width:90%;left:5%;" data-ng-controller="resumeController">
+
+	<div layout="row" layout-align="center center" md-theme="amber">
+		<md-content>
+		<center>
+			<md-button  flex flex-order="2" data-ng-click="changeResume('english')" class="md-fab  md-primary"> English </md-button>
+			<md-button flex flex-order="1" data-ng-click="changeResume('japanese')"  class="md-fab  md-primary"> Japanese </md-button>
+	  	</center>
+	  	</md-content>
+	</div>
+
+
+
+<iframe data-ng-src="{{resume_language}}" style="width:800px;height:100%;position:absolute;"></iframe>
+
 </div>

@@ -36,6 +36,23 @@ portfolioControllers.controller('workController',['$scope',function($scope){
 
 portfolioControllers.controller('resumeController',['$scope',function($scope){
 
+
+//japanese language resume link
+
+
+$scope.resume_language = "docs\\resume\\rirekisyo_stu.pdf";
+
+//Switch Resumes
+$scope.changeResume = function(lang)
+{
+	if(lang == 'japanese')
+		$scope.resume_language = "docs\\resume\\rirekisyo_stu.pdf";
+	else
+		$scope.resume_language = "docs\\resume\\KoustubhGaikwad_resume.pdf";
+}
+
+
+
 }]);
 
 portfolioControllers.controller('galleryController',['$scope',function($scope){
